@@ -8,14 +8,7 @@
     android:fillViewport="false"
     android:background="@color/black_background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Top"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size_description"
-        android:fontFamily="@font/r_bold"
-/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
