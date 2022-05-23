@@ -8,10 +8,41 @@
     android:fillViewport="false"
     android:background="@color/black_background">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Top"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_description"
+        android:fontFamily="@font/r_bold"
+/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPager2"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="?attr/actionBarSize"/>
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dots_indicator"
+            app:dotsColor="@android:color/darker_gray"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="6dp"
+            app:dotsSpacing="2dp"
+            app:dotsWidthFactor="3"
+            app:selectedDotColor="@color/white"
+            app:progressMode="true"
+            android:layout_gravity="center"/>
 
 
     <TextView
