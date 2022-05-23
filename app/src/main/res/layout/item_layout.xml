@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/vertical_margin"
+    android:layout_marginTop="@dimen/vertical_margin"
+    android:layout_marginEnd="@dimen/vertical_margin"
+    android:layout_marginBottom="@dimen/margin_input_horizontal"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/paragraph_margin"
+                app:cardBackgroundColor="@color/black_background"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/row_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/receipt_time_tv"
+                        android:layout_marginTop="@dimen/row_margin"
+                        android:layout_marginBottom="@dimen/row_margin"
+                        android:paddingStart="@dimen/row_margin"
+                        android:paddingEnd="@dimen/row_margin"
+                        android:text="10 min"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_regular"
+                        android:fontFamily="@font/r_bold"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/item_iv"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chef_indian"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/row_margin"
+        android:id="@+id/item_title_tv"
+        android:paddingStart="@dimen/row_margin"
+        android:paddingEnd="@dimen/row_margin"
+        android:singleLine="true"
+        android:fontFamily="@font/r_regular"
+        android:text="Pizza"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_helper"
+        android:textStyle="bold"/>
+
+</LinearLayout>
