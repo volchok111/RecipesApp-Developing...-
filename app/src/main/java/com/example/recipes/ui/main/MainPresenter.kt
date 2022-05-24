@@ -4,9 +4,8 @@ import android.content.Context
 import com.arellomobile.mvp.InjectViewState
 import com.arellomobile.mvp.MvpPresenter
 import com.example.recipes.R
-import com.example.recipes.api.ApiService
 import com.example.recipes.api.ApiServiceImpl
-import com.example.recipes.model.RecipeModel
+import com.example.recipes.model_recipes.RecipeModel
 import io.reactivex.disposables.CompositeDisposable
 
 @InjectViewState

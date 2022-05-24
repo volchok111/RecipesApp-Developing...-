@@ -10,11 +10,11 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.example.recipes.R
-import com.example.recipes.adapter.Adapter
+import com.example.recipes.adapter.MainAdapter
 import com.example.recipes.adapter.SliderAdapter
 import com.example.recipes.databinding.FragmentMainBinding
-import com.example.recipes.model.Dishes
-import com.example.recipes.model.RecipeModel
+import com.example.recipes.model_recipes.Dishes
+import com.example.recipes.model_recipes.RecipeModel
 import com.example.recipes.ui.home.HomeFragment
 import kotlin.math.abs
 
@@ -25,7 +25,7 @@ class MainFragment : HomeFragment(), MainView{
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
-    private val adapter by lazy { Adapter() }
+    private val adapter by lazy { MainAdapter() }
 
     private val runner = Runnable {
         if (binding.viewPager2.currentItem >= 3)

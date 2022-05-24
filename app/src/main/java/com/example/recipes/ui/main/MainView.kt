@@ -2,7 +2,7 @@ package com.example.recipes.ui.main
 
 import com.arellomobile.mvp.viewstate.strategy.SingleStateStrategy
 import com.arellomobile.mvp.viewstate.strategy.StateStrategyType
-import com.example.recipes.model.RecipeModel
+import com.example.recipes.model_recipes.RecipeModel
 import com.example.recipes.ui.home.HomeView
 
 @StateStrategyType(SingleStateStrategy::class)

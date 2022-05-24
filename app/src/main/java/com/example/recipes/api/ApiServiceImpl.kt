@@ -3,8 +3,7 @@ package com.example.recipes.api
 import android.content.Context
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
-import androidx.core.content.getSystemService
-import com.example.recipes.model.Recipe
+import com.example.recipes.model_recipes.Recipe
 import com.example.recipes.network.HttpRetrofit
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers

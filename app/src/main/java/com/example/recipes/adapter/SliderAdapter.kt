@@ -7,8 +7,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.recipes.R
-import com.example.recipes.model.Dishes
-import com.example.recipes.model.RecipeModel
+import com.example.recipes.model_recipes.Dishes
 
 class SliderAdapter(val viewPager2: ViewPager2,private var dataList: List<Dishes>):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

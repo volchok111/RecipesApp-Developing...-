@@ -1,6 +1,6 @@
 package com.example.recipes.network
 
-import com.example.recipes.model.Recipe
+import com.example.recipes.model_recipes.Recipe
 import io.reactivex.Observable
 import retrofit2.http.GET
 import retrofit2.http.Header
