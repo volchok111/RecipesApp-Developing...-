@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.recipes.R
+import com.example.recipes.adapter.IngredientAdapter
 import com.example.recipes.databinding.FragmentDetailBinding
 import com.example.recipes.model_recipes.RecipeModel
 import com.example.recipes.ui.home.HomeFragment
@@ -25,11 +26,13 @@ class DetailFragment : HomeFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentDetailBinding.inflate(layoutInflater)
         binding.fragmentDetailTitleTv.text = recipe.name
         binding.fragmentDetailCookTimeTv.text = recipe.total_time_minutes.toString()
         binding.fragmentDetailReviewTv.text = recipe.description
+        val adapter = IngredientAdapter(recipe.sections[0].components)
+        binding.ingredientsRv.adapter = adapter
         return binding.root
     }
 

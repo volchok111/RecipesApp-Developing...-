@@ -7,25 +7,16 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recipes.R
 import com.example.recipes.model_recipes.Component
+import com.example.recipes.model_recipes.ComponentX
 import com.example.recipes.model_recipes.Ingredient
 
-class IngredientAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class IngredientAdapter(private val ingredientList: List<ComponentX>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
-    private var ingredientList = arrayListOf<Component>()
-
-    fun newList(list: ArrayList<Component>){
-        ingredientList = list
-        notifyDataSetChanged()
-    }
-
-    fun addList(ingr: Component){
-        ingredientList.add(ingr)
-    }
 
     class IngredientViewHolder(view: View): RecyclerView.ViewHolder(view){
         private val name = view.findViewById<TextView>(R.id.name_item_tv)
 
-        fun bind(comp: Component){
+        fun bind(comp: ComponentX){
             name.text = comp.ingredient.name
         }
     }
